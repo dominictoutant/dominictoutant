@@ -4,7 +4,7 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": true,
-    "editor.defaultFormatter": null,
+    "editor.defaultFormatter": "null",
     "editor.suggestSelection": "first",
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "all",
@@ -14,7 +14,7 @@
     "powershell.integratedConsole.showOnStartup": false,
     "powershell.scriptAnalysis.settingsPath": "${workspaceFolder}/PSScriptAnalyzerSettings.psd1",
     "powershell.powerShellAdditionalExePaths": {
-      "pwsh": "\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe"
+      "pwsh": "\\Program Files\\PowerShell\\7\\pwsh.exe"
     },
     "powershell.powerShellDefaultVersion": "PowerShell 7 (x64)",
     "powershell.cwd": "PowerShell 7 (x64)",
