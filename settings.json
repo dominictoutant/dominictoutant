@@ -1,27 +1,57 @@
 {
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  "editor.renderControlCharacters": true,
-    "editor.defaultFormatter": "null",
-    "editor.suggestSelection": "first",
-    "editor.wordWrap": "on",
-    "editor.renderWhitespace": "all",
-    "editor.renderLineHighlight": "all",
-    "editor.renderFinalNewline": "on",
-    "powershell.scriptAnalysis.enable": true,
-    "powershell.integratedConsole.showOnStartup": false,
-    "powershell.scriptAnalysis.settingsPath": "${workspaceFolder}/PSScriptAnalyzerSettings.psd1",
-    "powershell.powerShellAdditionalExePaths": {
-      "pwsh": "\\Program Files\\PowerShell\\7\\pwsh.exe"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.semi": false,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.scriptAnalysis.settingsPath": "${workspaceFolder}/PSScriptAnalyzerSettings.psd1",
+  "powershell.powerShellAdditionalExePaths": {
+    "pwsh": "\\Program Files\\PowerShell\\7\\pwsh.exe"
+  },
+  "powershell.cwd": "PowerShell 7 (x64)",
+  "workbench.settings.applyToAllProfiles": [
+    "powershell.cwd",
+    "powershell.startAsLoginShell.osx",
+    "powershell.enableProfileLoading",
+    "powershell.powerShellDefaultVersion"
+  ],
+  "powershell.startAsLoginShell.osx": false,
+  "files.associations": {
+    "": ""
+  },
+
+  "powershell.integratedConsole.focusConsoleOnExecute": false,
+  "workbench.colorTheme": "Monokai",
+  "workbench.productIconTheme": "icons-kamekazi-dark",
+  "workbench.iconTheme": "icons-kamekazi-dark",
+  "powershell.powerShellDefaultVersion": "PowerShell 7 (x64)",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
     },
-    "powershell.powerShellDefaultVersion": "PowerShell 7 (x64)",
-    "powershell.cwd": "PowerShell 7 (x64)",
-    "workbench.settings.applyToAllProfiles": [
-      "powershell.cwd",
-      "powershell.scriptAnalysis.settingsPath",
-      "powershell.startAsLoginShell.osx",
-      "powershell.enableProfileLoading",
-      "powershell.powerShellDefaultVersion"
-    ],
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  }
+}
