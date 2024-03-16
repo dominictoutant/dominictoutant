@@ -25,11 +25,3 @@
       "powershell.enableProfileLoading",
       "powershell.powerShellDefaultVersion"
     ],
-    "powershell.startAsLoginShell.osx": false,
-    "files.associations": {
-      "": ""
-    },
-    "powershell.enableProfileLoading": false,
-    "powershell.developer.setExecutionPolicy": false,
-    "powershell.integratedConsole.focusConsoleOnExecute": false
-  }
