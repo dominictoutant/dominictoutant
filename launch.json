@@ -1,0 +1,97 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "PowerShell Launch Script",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "enter path or command to execute e.g.: ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
+            "cwd": "${cwd}"
+        },
+        {
+            "name": "PowerShell: Launch Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": []
+        },
+        {
+            "name": "PowerShell: Launch Current File with Args",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": ["-arg1", "-arg2"]
+        },
+        {
+            "name": "PowerShell: Launch Current File with Profile",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": [],
+            "customPipeName": "myPipe",
+            "createTemporaryIntegratedConsole": true
+        },
+        {
+            "name": "PowerShell: Launch Current File with Profile and Args",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": ["-arg1", "-arg2"],
+            "customPipeName": "myPipe",
+            "createTemporaryIntegratedConsole": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+          {
+            "type": "node",
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          }
+        
+    ]
+}
