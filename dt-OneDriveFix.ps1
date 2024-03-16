@@ -1,42 +1,4 @@
-
-$PSVersionTable.PSVersion
-
-# Check if powershell is installed
-if (-not (Test-Path -Path "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe")) {
-    Write-Host "PowerShell is not installed. Installing PowerShell..."
-
-    # Install Pester module
-    Install-Module -Name Pester -Force
-    
-    Write-Host "PowerShell installation completed."
-    return
-}
     Import-Module -Name Pester -Force
-    # Define the function to run the issue
-    function Invoke-IssueFunction {
-        param (
-            $issue
-        )
-        try {
-            if ($issue.Name -eq "Run Program") {
-                $result = Run-Program -FilePath ""C:\Troubleshoot\Modules\dt-OneDriveFix.exe""
-            }
-            else {
-                & $issue.Function
-            }
-            return @{
-                Result = "Success"
-                Information = "Issue $($issue.Name) has been resolved."
-                ResultDetails = $result
-            }
-        }
-        catch {
-            return @{
-                Result = "Failure"
-                Information = "An error occurred while executing the function. For more information, refer to: $($issue.Link)"
-            }
-        }
-    }
 
 function Invoke-IssueFunction {
     param (
